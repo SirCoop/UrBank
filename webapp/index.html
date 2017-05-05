@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="ally/">
+    <!--[if lte IE 6]></base><![endif]-->
+    <title>UR Bank</title>
+    <meta charset="utf-8">
+    <title>GMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <script src="../libs/jquery-3.2.1.js"></script>
+    <script>
+        var $ = jQuery
+    </script>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div id="header-container">
+        <div id="header-spacer-1"></div>
+        <div id="header-spacer-2">UR Bank</div>
+        <div id="header-spacer-3"></div>
+        <div id="header-spacer-4">
+            <div class="header-link-wrapper"><a href="home">home</a></div>
+            <div class="header-link-wrapper"><a href="employee">employee</a></div>
+            <div class="header-link-wrapper active"><a href="company">company</a></div>
+            <div class="header-link-wrapper"><a href="services">services</a></div>
+            <div class="header-link-wrapper"><a href="contact">contact</a></div>
+        </div>
+        <div id="header-spacer-5"></div>
+    </div>
+
+    <div class="container-padding"></div>
+    <div class="container">
+        <div>
+            <div class="col main header">
+                <h1 id="titleClaim">Best Bank Ever!</h1>
+            </div>
+            <div class="col sidebar header">
+                <button id="loginButton" onclick="openLoginModal()">Login</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="col main">
+                <p id="summary">
+                    Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing</a> elit. Donec turpis sapien, blandit
+                    at erat vitae, pretium luctus lectus. Praesent non pharetra augue. Aliquam erat volutpat. Etiam venenatis
+                    metus eget ex volutpat, quis ultricies sem elementum. Fusce rhoncus sem malesuada, mattis arcu sed, dapibus
+                    lacus. Suspendisse <a href="#">ultrices</a> semper odio semper pellentesque.
+                </p>
+
+                <div id="propaganda">
+                    <b>Reasons We're Awesome:</b>
+                    <ul id="reasonList">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Ut hendrerit felis. Nam congue.</li>
+                        <li>Eu blandit odio nulla.</li>
+                        <li>Tempus nulla.</li>
+                        <li>Curabitur porta tincidunt.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img id="phone" src="../assets/phone.png" alt="">
+                    <div id="adContainer">
+                        <div id="adTitle"><b>Amazing Mobile Info</b></div>
+                        <div id="ad">
+                            Erat vitae, pretium luctus lectus. Praesent non pharetra augue. Aliquam erat volutpat. Etiam venenatis metus eget ex volutpat,
+                            quis ultricies sem elementum. Fusce rhoncus sem malesuada.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col sidebar">
+                <div id="sidebar-nav-container">
+                    <div id="tab-container" class="tab">
+                        <button id="newsButton" class="tablinks" onclick="openCity(event, 'news')">News</button>
+                        <button id="archiveButton" class="tablinks" onclick="openCity(event, 'archive')">Archive</button>
+                    </div>
+
+                    <div id="news" class="tabcontent">
+                        <h3>Lorem ipsum dolor</h3>
+                        <div>Ut hendrerit felis. Nam congue. Ut hendrerit felis. Nam congue. Ut hendrerit felis. Nam congue.</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <div>Eu blandit odio nulla in ante. Eu blandit odio nulla in ante.</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <div>Tempus nulla. Curabitur porta tincidunt. Tempus nulla. Curabitur porta tincidunt. Tempus nulla. Curabitur
+                            porta tincidunt.</div>
+                    </div>
+
+                    <div id="archive" class="tabcontent">
+                        <h3>Lorem ipsum dolor</h3>
+                        <h3>Lorem ipsum dolor</h3>
+                        <h3>Lorem ipsum dolor</h3>
+                        <h3>Lorem ipsum dolor</h3>
+                        <h3>Lorem ipsum dolor</h3>
+                        <h3>Lorem ipsum dolor</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="calloutContainer" class="col main">
+                <div id="rates">Rates&nbsp;</div>
+                <div id="verticalLine"></div>
+                <div id="callout">&nbsp;<b>Check them out.</b></div>
+            </div>
+            <div class="col sidebar">
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col main">
+                <table id="customerTable">
+                    <tr id="tableHeader">
+                        <th></th>
+                        <th>Annual Percentage Yield</th>
+                        <th>Est. Earnings for 1 Year*</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col sidebar">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-padding"></div>
+
+    <div id="footer">
+        <div class="container-padding"></div>
+        <div class="container">
+            <div class="col footer-copy">
+                <span id="copyright">&copy;</span>
+                <span id="year"></span>
+                <span id="bankName">URBank</span>
+            </div>
+            <div class="col footer-links-wrapper">
+                <a id="footer-home" class="footer-link" href="home">home</a>
+                <a id="footer-employee" class="footer-link" href="employee">employee</a>
+                <a id="footer-company" class="footer-link" href="company">company</a>
+                <a id="footer-services" class="footer-link" href="services">services</a>
+                <a id="footer-contact" class="footer-link" href="contact">contact</a>
+            </div>
+        </div>
+        <div class="container-padding"></div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="close" onclick="onClose()">&times;</div>
+            <div class="modal-title">Sign In To Your Account</div>
+            <form onsubmit="login()">
+                <div class="input-group">
+                    <div class="label-wrapper">
+                        <label for='name'>Username</label>
+                    </div>
+                    <input type='text' id='name' />
+                </div>
+                <div class="input-group">
+                    <div class="label-wrapper">
+                        <label for='name'>Password</label>
+                    </div>
+                    <input type='text' id='password' />
+                </div>
+                <div class="modal-footer">
+                    <button id="modalLoginButton" onclick="login()">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var year = new Date().getFullYear();
+        $('#year').text(year);
+    </script>
+
+    <script src="../scripts/fetch.js"></script>
+    <script src="../scripts/tabs.js"></script>
+    <script src="../scripts/login.js"></script>
+    <script>
+        $('#header-company').addClass('active');
+    </script>
+</body>
+
+</html>
