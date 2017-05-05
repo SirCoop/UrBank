@@ -139,12 +139,8 @@ div>a {
     float: right;
     position: absolute;
     z-index: 1000;
-    top: 300px;
-    right: 568px;
-    /*float: right;
-    position: absolute;
-    left: 781px;
-    top: 310px;*/
+    right: 750px;
+    top: 265px;
 }
 
 #rates {
