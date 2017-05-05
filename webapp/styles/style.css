@@ -253,7 +253,7 @@ div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 49%;
+    width: 38%;
 }
 
 div.tab button {
@@ -299,7 +299,7 @@ div.tab button.inactive {
 
 #archiveButton.inactive {
     font-size: 13px;
-    padding: 14px 16px;
+    padding: 14px 17px;
 }
 
 .tabcontent {
